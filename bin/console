@@ -1,0 +1,30 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+Bundler.setup(:default,:production,:development)
+
+require "dotenv"
+Dotenv.load
+
+require "debugging/all"
+
+loaddirs = [
+  ['.', 'lib'],
+]
+
+loaddirs.each do |path|
+  libdir = File.join(path)
+  $LOAD_PATH.unshift(libdir) unless $LOAD_PATH.include?(libdir)
+end
+
+require "wowbagger"
+
+# You can add fixtures and/or initialization code here to make experimenting
+# with your gem easier. You can also use a different console, if you like.
+
+# (If you use this, don't forget to add pry to your Gemfile!)
+# require "pry"
+# Pry.start
+
+require "irb"
+IRB.start
