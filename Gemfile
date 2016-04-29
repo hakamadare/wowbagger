@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 group :production do
   gem "aws-sdk", "~> 2"
+  gem "gli", "~> 2.13"
 end
 
 group :development,:test do

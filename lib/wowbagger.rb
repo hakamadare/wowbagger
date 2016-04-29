@@ -1,5 +1,6 @@
 require "wowbagger/version"
 
 module Wowbagger
-  # Your code goes here...
+  autoload :AWS, 'wowbagger/aws'
+  autoload :CLI, 'wowbagger/cli'
 end
