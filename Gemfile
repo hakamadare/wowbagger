@@ -14,7 +14,7 @@ group :development,:test do
   gem "irbtools", require: "irbtools/binding"
   gem "rake", "~> 10.0"
   gem "rspec", "~> 3.0"
-  gem "yard", "~> 0.8"
+  gem "yard", "~> 0.9", ">= 0.9.35"
 end
 
 # Specify your gem's dependencies in wowbagger.gemspec
