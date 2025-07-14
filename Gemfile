@@ -11,7 +11,7 @@ group :development,:test do
   gem "binding_of_caller", "~> 0.7"
   gem "bundler", "~> 1.11"
   gem "dotenv", "~> 2"
-  gem "irbtools", require: "irbtools/binding"
+  gem "irbtools", ">= 2.1.0", require: "irbtools/binding"
   gem "rake", "~> 10.0"
   gem "rspec", "~> 3.0"
   gem "yard", "~> 0.8"
